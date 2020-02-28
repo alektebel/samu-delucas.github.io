@@ -1,0 +1,23 @@
+@keyframes mask-reveal-from-right{
+  0.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+        -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+  }
+}
+
+@keyframes letter-spacing-reveal {
+  100% {
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-reveal {
+  100% {
+    opacity: 1;
+  }
+}

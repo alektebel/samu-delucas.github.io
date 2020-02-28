@@ -1,0 +1,22 @@
+/*------RESET--------*/
+
+html, body, #main, #object {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {background: rgb(240, 215, 0, .8);}
+
+p {font-family: 'Open Sans', sans-serif;}
+
+h1, h2, h3, h4 {
+  font-family: 'Cabin', sans-serif;
+  color:rgb(29, 29, 29);
+}
+
+hr {
+  width: 70%;
+  border-top: 2px solid rgb(240, 215, 0);
+}

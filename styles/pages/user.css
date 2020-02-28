@@ -1,0 +1,32 @@
+#user{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    min-height: 80%;
+    padding: 5% 0;
+    background: url('../../img/fondo.jpg') no-repeat fixed center;
+    background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+}
+
+.form{
+    display: flex;
+    margin:0;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    
+    padding: 5%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .55);
+}
+
+#register-form{
+    display:none;
+}

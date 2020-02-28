@@ -1,0 +1,73 @@
+/*-------INPUT-------*/
+.form-group {
+    display: block;
+    height: auto;
+    position: relative;
+    margin: 10px 0;    
+}
+
+.form-control {
+    position: relative;
+    height: 50px;
+    width: 300px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    background: none;
+    border-radius: 0;
+    transition: .5s ease-in-out;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom:  2px solid rgb(240, 215, 0);
+}
+
+label {
+    display: block;
+    cursor: text;
+    position: absolute;
+    top: 0;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-left: 15px;
+    line-height: 50px;
+    transition: .5s ease;
+}
+label::selection {background:none;}
+
+.form-control:focus + label,
+.form-control:valid + label {
+    top: -25px;
+    padding-left: 0;
+    font-size: 10px;
+}
+
+.form-control:focus + label{
+    color: rgb(240, 215, 0);
+}
+
+#user p{
+    color: #FFFFFF;
+}
+
+#user h1{
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+#user a:hover{
+    color: rgb(240, 216, 0);
+    cursor: pointer;
+    text-decoration: underline;
+}
+#facultad:focus{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+option{
+    background: rgba(0, 0, 0, .55);
+}

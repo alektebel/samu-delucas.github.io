@@ -1,0 +1,144 @@
+/*-------TABS-------*/
+
+#tabs {
+  display: flex;
+  vertical-align: baseline;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  border: 0;
+  background: rgba(0, 0, 0, .55);
+  backdrop-filter: blur(12px);
+  z-index: 100000;
+}
+
+#tabs:focus {outline: 0;}
+
+.tab {
+  display: inline-block;
+  margin: 0 .85em;
+  padding-top: 2px;
+  padding-right: 12px;
+  padding-left: 12px;
+  line-height: 46px; 
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  color: #f9f9f9;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  overflow: hidden;
+  transition: border-color .7s cubic-bezier(.06, .81, 0, .98);
+}
+
+.tab:hover {border-bottom: 3px solid rgb(240, 215, 0);}
+
+a {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Cabin', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*------HAMBURGUER------*/
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #FFF;
+  margin: 3px 5px;
+  transition: 0.4s;
+}
+
+.ham-active .bar1 {
+  transform: translate(0px,9px) rotate(-45deg) ;
+}
+
+.ham-active .bar2 {
+  opacity: 0;
+}
+
+.ham-active .bar3 {
+  transform: translate(0px,-9px) rotate(45deg);
+}
+
+/*------SIDE MENU------*/
+
+.submenu {
+  display: block;
+  position: fixed;
+  margin-top: 50px;
+  opacity: 1;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  transition: 0.4s ease-in-out;
+}
+
+.sub-active {
+  width: 320px;
+  box-shadow: 7px 10px 10px 10px #000;
+}
+
+
+.submenu .sub-list{
+  display: block;
+  margin: 0;
+  width: 0;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-left: 15px;
+  line-height: 46px; 
+  font-family:'Open Sans', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  color: #f9f9f9;
+  opacity: 0;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(240, 215, 0, 0.6);
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.sub-active .sub-list {
+  width: 100%;
+  opacity: 1;
+}
+
+
+/*--------RESPONSIVE-------*/
+
+@media screen and (max-width:1024px) {
+  .hamburguer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      width: 50px;
+  }
+
+  .tab {display: none;}
+
+  #bottom {
+      margin-right: 5%;
+      margin-left: 5%;
+  }
+
+  #tabs {justify-content: flex-end;}
+}

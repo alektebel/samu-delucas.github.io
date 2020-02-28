@@ -1,0 +1,15 @@
+/*-----FOOTER------*/
+
+#footer {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background: rgb(32, 32, 32);
+  color:rgb(190, 190, 190);
+}
+
+#footer p{
+  margin-left: 10px;
+  font-size: 12px;
+  align-self: flex-end;
+}

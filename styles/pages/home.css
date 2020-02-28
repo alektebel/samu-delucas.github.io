@@ -1,0 +1,139 @@
+/*------------TOP------------*/
+
+#top {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 83%;
+    margin-top: 0;
+    background: url('../../img/fondo.jpg') no-repeat fixed center;
+    background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center; 
+    text-align: center;
+    overflow: hidden;
+}
+
+#top::before{
+    content:'';
+    position:absolute; 
+    top:100%;
+    right:-50%;
+    width:100%;
+    height:100%;
+    background:#FFF;
+    box-shadow:0px 10px 15px 10px rgba(0, 0, 0, 0.6);
+    transform-origin: left;
+    transform: skewY(-4deg);
+}
+
+#top::after{
+    content:'';
+    position:absolute;
+    top:100%;
+    left:-50%;
+    width:100%;
+    height:100%;
+    background:#FFF;
+    box-shadow:0px 10px 15px 10px rgba(0, 0, 0, 0.6);
+    transform-origin: right;
+    transform: skewY(4deg);
+}
+
+#title {
+    width: 100%;
+    opacity: 0;
+    letter-spacing: 5px;
+    font-family: 'Open Sans';
+    font-size: 5rem;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: #FFF;
+    animation: letter-spacing-reveal 1s .2s cubic-bezier(.215,.61,.355,1) 1 forwards;
+}
+
+/*------------BOTTOM------------*/
+
+#bottom {
+    display: block;
+    opacity:0;
+    margin-top: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
+    text-align: justify;
+    animation: opacity-reveal 0.6s 1.6s ease-in-out forwards;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    margin-bottom:20px;
+}
+
+.section-text {
+    width: 75%;
+    font-size: 1.1rem;
+}
+
+.section-text h2{
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.section-left h2{
+    text-align: left;
+}
+
+.section-right h2{
+    text-align: right;
+}
+.section-img {
+    width: 20%;
+    margin: 20px;
+    background:black;
+    border:none;
+    border-radius: 5px;
+}
+
+/*----------RESPONSIVE---------*/
+
+@media screen and (max-width:488px){
+    #title {
+        font-size: 3.2rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:570px) and (min-width:488px){
+    #title {
+        font-size: 4.1rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:860px) and (min-width:570px) {
+    #title {
+        font-size: 3.2rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-text {
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+@import url('reset.css');
+
+@import url('animations.css');
+
+/*------------FONTS---------*/
+
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+/*------------COMPONENTS---------*/
+
+@import url('components/menu.css');
+@import url('components/footer.css');
+@import url('components/buttons.css');
+@import url('components/inputs.css');
+
+/*------------PAGES---------*/
+
+@import url('pages/home.css');
+@import url('pages/events.css');
+@import url('pages/projects.css');
+@import url('pages/user.css');

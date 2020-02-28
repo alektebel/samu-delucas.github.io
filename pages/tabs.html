@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+</head>
+<body>
+    <!-- <div id="tabs"> -->
+        <div class="tab" onclick="load_page('pages/events.html')"><a>EVENTOS</a></div>
+        <div class="tab" onclick="load_page('pages/projects.html')"><a>PROYECTOS</a></div>
+        <div class="tab" onclick="load_page('pages/user-login.html')"><a>USUARIOS</a></div>
+        <div class="hamburguer" onclick="toggleMenu(this, submenu)">
+            <script>
+                function toggleMenu(x, y) {
+                    x.classList.toggle("ham-active");
+                    y.classList.toggle("sub-active");
+                }
+            </script>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    <!-- </div> -->
+</body>
+</html>
